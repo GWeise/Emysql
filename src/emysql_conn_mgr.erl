@@ -326,7 +326,7 @@ find_pool(PoolId, Pools) ->
 find_pool(_, [], _) -> undefined;
 
 find_pool(PoolId, [#pool{pool_id = PoolId} = Pool|Tail], OtherPools) ->
-    {Pool, OtherPools ++ Tail};
+    {Pool, lists:append(OtherPools, Tail)};
 
 find_pool(PoolId, [Pool|Tail], OtherPools) ->
     find_pool(PoolId, Tail, [Pool|OtherPools]).
