@@ -1,3 +1,5 @@
+Do not use this fork, it uses nif, use <https://github.com/ppolv/Emysql/>
+
 ## Emysql 0.3.0
 
 <hr/>
